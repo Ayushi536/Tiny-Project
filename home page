@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Left Side: Hamburger & Logo -->
+        <div class="nav-left">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <img src="campus logo.jpg" alt="Campus Connect Logo" class="logo">
+        </div>
 
+        <!-- Center: Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>`
+            <li><a href="service.html">Service</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <!-- Right Side: Login/Signup -->
+        <div class="nav-right">
+            <button class="login-btn"><a href="loginform.html"> Login / Sign Up</a></button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu (for small screens) -->
+    <div class="sidebar" id="sidebar">
+        <a href="#" onclick="toggleMenu()">✖</a>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Calendar</a>
+        <a href="#">About</a>
+        <a href="#">Login / Sign Up</a>
+    </div>
+
+    <!-- Home Page Content -->
+    <section class="home">
+        <h1 class="lets-connect">Let's Connect</h1>
+        <img src="underline_pic.png" alt="Design Underline" class="underline-img">
+
+        <div class="home-content">
+            <div class="text-section">
+                <h2 class="welcome-text">Welcome to</h2>
+                <h2 class="campus-connect">Campus Connect</h2>
+                <p class="tagline">Collaborate, Innovate, Succeed – Connect with Peers and Mentors.</p>
+            </div>
+            <div class="image-section">
+                <img src="girl_studying_pic.png" alt="Campus Connect Image">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
