@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles_about.css">
+    <script src="https://kit.fontawesome.com/6bf8ca5dd1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Left Side: Hamburger & Logo -->
+        <div class="nav-left">  
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <img src="campus logo.jpg" alt="Campus Connect Logo" class="logo">
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Side: Login/Signup -->
+        <div class="nav-right">
+            <button class="login-btn">Login / Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu (for small screens) -->
+    <div class="sidebar" id="sidebar">
+        <a href="#" onclick="toggleMenu()">✖</a>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Calendar</a>
+        <a href="#">About</a>
+        <a href="#">Login / Sign Up</a>
+    </div>
+
+    <!-- About Content Box -->
+    <div class="about-container">
+        <!-- Left Side - About Text -->
+        <div class="about-text">
+            <h1>About This Project</h1>
+            <h3>This project is a learning and interaction platform designed for students and learners to collaborate, share knowledge, and grow together.</h3>
+            <h4>It allows users to:</h4>
+            <p><i class="fa-solid fa-user-group"></i>  Create groups and engage in Q&A sessions.</p>
+            <p><i class="fa-solid fa-ranking-star"></i>  Earn ranks and badges based on contributions.</p>
+            <p><i class="fa-solid fa-comments"></i>  Connect with mentors and seniors for guidance.</p>
+            <p><i class="fa-solid fa-person-rays"></i>  The platform provides AI-powered learning recommendations to help users stay on track.</p>
+            <p><i class="fa-solid fa-calendar-days"></i>  It also includes an event calendar to keep students updated on seminars, workshops, and college activities.</p>
+            <h3>The goal is to create a supportive community where students can learn, grow, and succeed together.</h3>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="about-image">
+            <img src="about_img.jpg" alt="About Image" >
+        </div>
+    </div>
+
+</body>
+</html>
