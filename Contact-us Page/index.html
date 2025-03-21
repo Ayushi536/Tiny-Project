@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Campus Connect</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .contact-info h3 {
+            color: #007bff;
+            font-size: 22px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Left Side: Hamburger & Logo -->
+        <div class="nav-left">  
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <img src="C:\Users\Sanjay Kumar Kanchan\OneDrive\画像\Saved Pictures\campus logo.jpg" alt="Campus Connect Logo" class="logo">
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Side: Login/Signup -->
+        <div class="nav-right">
+            <button class="login-btn">Login / Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu (for small screens) -->
+    <div class="sidebar" id="sidebar">
+        <a href="#" onclick="toggleMenu()">✖</a>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Calendar</a>
+        <a href="#">About</a>
+        <a href="#">Login / Sign Up</a>
+    </div>
+
+    <div class="container">
+        <h2>Contact Us - Campus Connect</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="general">General Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="events">Event-Related Query</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="contact-info">
+            <h3>Our Contact Details</h3>
+            <p><strong>Email:</strong> support@campusconnect.com</p>
+            <p><strong>Phone:</strong> +91-9876543210</p>
+            <p><strong>Address:</strong> XYZ University, Delhi, India</p>
+        </div>
+    </div>
+</body>
+</html>
