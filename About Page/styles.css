@@ -29,12 +29,6 @@ body {
     margin-right: 15px;
 }
 
-.about-text p:hover{
-    color: #007BFF;
-    font-size: 17px;
-    font-family: 'Magnolia Script', cursive;
-}
-
 /* Logo */
 .logo {
     height: 40px;  /* Adjust height as needed */
@@ -234,6 +228,6 @@ body {
 
     .image-section img {
         width: 100%;
-        max-width: 300px;
-    }
+        max-width: 300px;
+    }
 }
